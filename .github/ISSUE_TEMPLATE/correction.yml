@@ -1,0 +1,25 @@
+name: Correction
+description: Request a correction (spelling, grammar, etc.) to an existing document
+title: '[Corr]: '
+labels: ['correction']
+body:
+  - type: textarea
+    id: documents
+    attributes:
+      label: Document
+      description: Please link the document to be corrected.
+      placeholder: Document
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please explain the correction, including the specific location.
+      placeholder: Description
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Please provide any additional information.
+      placeholder: Additional information
