@@ -1,0 +1,39 @@
+name: Revision
+description: Request a revision to a document
+title: '[Rev]: '
+labels: ['revision']
+body:
+  - type: textarea
+    id: document
+    attributes:
+      label: Document
+      description: Please link the existing document to be revised.
+      placeholder: Existing document
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please explain the revision you are requesting.
+      placeholder: Description
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefits
+      description: Please describe who this revision benefits and how.
+      placeholder: Benefits
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: If there are any risks from not implementing this revision, please explain them.
+      placeholder: Risks
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Please provide any additional information.
+      placeholder: Additional information

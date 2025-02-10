@@ -1,0 +1,39 @@
+name: Addition
+description: Request an addition to the documents
+title: '[Add]: '
+labels: ['addition']
+body:
+  - type: textarea
+    id: documents
+    attributes:
+      label: Existing Document(s)
+      description: Please link the existing document(s) for this addition. Leave blank if this is a request for the creation of a new document.
+      placeholder: Existing documents
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please explain the addition you are requesting.
+      placeholder: Description
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefits
+      description: Please describe who this addition benefits and how.
+      placeholder: Benefits
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: If there are any risks from not implementing this addition, please explain them.
+      placeholder: Risks
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Please provide any additional information.
+      placeholder: Additional information
